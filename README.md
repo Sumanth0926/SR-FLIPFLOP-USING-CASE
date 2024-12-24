@@ -43,6 +43,15 @@ The maximum possible groupings of adjacent ones are already shown in the figure.
 
 **RTL LOGIC FOR FLIPFLOPS**
 
+![Screenshot 2024-12-24 182440](https://github.com/user-attachments/assets/a2e87187-3ffa-4354-b173-0bfdd8a3083e)
+
+
 **TIMING DIGRAMS FOR FLIP FLOPS**
 
+
+![Screenshot 2024-12-24 182452](https://github.com/user-attachments/assets/5a65886a-0ba0-4e16-b2ee-c1845a274417)
+
 **RESULTS**
+Thus the program to implement SR flipflop using verilog and validating
+ their functionality using their functional tables has been verified successfully
+
