@@ -10,21 +10,7 @@ Quartus prime
 
 **THEORY**
 
-      module sr_ff(s,r,clk,q,qbar);
-      input s,r,clk;
-      output reg q;
-      output reg qbar;
-      initial 
-      begin
-      q=0;
-      qbar=1;
-      end
-      always @(posedge clk)
-      begin
-         q=s|(~r&q);
-         qbar=r|(~s&~q);
-      end
-      endmodule
+      SR Flip-Flop SR flip-flop operates with only positive clock transitions or negative clock transitions. Whereas, SR latch operates with enable signal. The circuit diagram of SR flip-flop is shown in the following figure.
 
 
 ![image](https://github.com/naavaneetha/SR-FLIPFLOP-USING-CASE/assets/154305477/0f710028-ad52-4d3e-9276-8714cf023a25)
@@ -49,14 +35,38 @@ The maximum possible groupings of adjacent ones are already shown in the figure.
 
 **Procedure**
 
-/* write all the steps invloved */
+1.Type the program in Quartus software.
+
+2.Compile and run the program.
+
+3.Generate the RTL schematic and save the logic diagram.
+
+4.Create nodes for inputs and outputs to generate the timing diagram.
+
+5.For different input combinations generate the timing diagram.
 
 **PROGRAM**
 
-/* Program for flipflops and verify its truth table in quartus using Verilog programming. 
-Developed by: pothu sumanth
-RegisterNumber: 24000831
-*/
+
+
+                  module sr_ff(s,r,clk,q,qbar);
+                  input s,r,clk;
+                  output reg q;
+                  output reg qbar;
+                  initial 
+                  begin
+                  q=0;
+                  qbar=1;
+                  end
+                  always @(posedge clk)
+                  begin
+                     q=s|(~r&q);
+                     qbar=r|(~s&~q);
+                  end
+                  endmodule 
+                  Developed by: pothu sumanth
+                  RegisterNumber: 24000831
+                  */
 
 **RTL LOGIC FOR FLIPFLOPS**
 
@@ -66,7 +76,8 @@ RegisterNumber: 24000831
 **TIMING DIGRAMS FOR FLIP FLOPS**
 
 
-![Screenshot 2024-12-24 182452](https://github.com/user-attachments/assets/5a65886a-0ba0-4e16-b2ee-c1845a274417)
+![Screenshot 2025-01-02 201553](https://github.com/user-attachments/assets/f6c14110-8100-43f3-b970-b432b9baa90a)
+
 
 **RESULTS**
 Thus the program to implement SR flipflop using verilog and validating
